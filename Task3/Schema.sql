@@ -1,0 +1,2 @@
+CREATE TABLE Product (id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, cost DECIMAL(10, 2) NOT NULL CHECK (cost >= 0));
+INSERT INTO Product (name, cost) VALUES ('Ноутбук', 75000.50), ('Мышь', 1200.00), ('Клавиатура', 3500.00), ('Монитор', 25000.00);
