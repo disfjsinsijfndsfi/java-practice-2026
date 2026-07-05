@@ -1,0 +1,18 @@
+package ru.itis.shop.user.repository;
+
+import ru.itis.shop.user.domain.User;
+import java.util.*;
+import java.util.Optional;
+
+public interface UserRepository {
+
+    void save(User user);
+
+    Optional<User> findByEmail(String email);
+
+    Optional<User> findById(String id);
+
+    void update(User user);
+
+    List<User> findAll();
+}
